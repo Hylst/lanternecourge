@@ -1,3 +1,4 @@
+import { InfoModal } from './components/InfoModal';
 import { useState, useEffect, useCallback } from 'react';
 import {
   HotspotId,
@@ -16,6 +17,7 @@ import { soundEngine } from './utils/soundEngine';
 import { Volume2, VolumeX, BookOpen, Eye, RotateCcw, Flame } from 'lucide-react';
 
 export function App() {
+  const [showInfo, setShowInfo] = useState(false);
   // Game State
   const [gameState, setGameState] = useState<'title' | 'playing' | 'victory' | 'gameover'>('title');
   const [difficulty, setDifficulty] = useState<DifficultyMode>('classic');
@@ -884,7 +886,19 @@ export function App() {
         elapsedSeconds={elapsedSeconds}
         cluesCount={cluesFoundCount}
       />
-    </div>
+    
+      {/* Bouton Infos technique */}
+      <button
+        onClick={() => setShowInfo(true)}
+        className="fixed top-2.5 right-2.5 z-[100] flex items-center gap-1 rounded-lg border border-slate-700/60 bg-slate-900/80 px-2 py-1 text-xs text-amber-200 shadow-md backdrop-blur hover:bg-slate-800 transition cursor-pointer select-none"
+        title="Comment ce jeu a été fait"
+        aria-label="Infos sur le jeu"
+      >
+        <span>ℹ️</span>
+        <span className="hidden sm:inline">Infos</span>
+      </button>
+      <InfoModal isOpen={showInfo} onClose={() => setShowInfo(false)} />
+</div>
   );
 }
 
