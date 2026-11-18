@@ -16,5 +16,5 @@ Escape game mystérieux au manoir de Valombre : collecte des allumettes pour nou
 - 100% statique, sans serveur ni collecte de donnees
 
 ## Contact
-- Email : geoffroy.streit@gmail.com
+- Email : geoffroy.streit@ik.me
 - Plateforme : https://games.hylst.fr/
