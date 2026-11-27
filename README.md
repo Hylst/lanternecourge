@@ -10,7 +10,7 @@ Escape game mystérieux au manoir de Valombre : collecte des allumettes pour nou
 ## Controles
 | Contrôle | Action |
 |---|---|
-| Clic / Tap | Explorer les pièces, manipuler les serrures |
+| Clic / Tap | Explorer le Grand Salon, manipuler les serrures |
 | Inventaire | Combiner et utiliser les clés et bougies |
 
 ## Developpement

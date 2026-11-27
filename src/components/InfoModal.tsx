@@ -36,7 +36,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose }) => {
             <strong className="text-amber-400">Musique &amp; sons :</strong> Web Audio API dédiée avec résonances de cloches d horloge, grincements de clés en laiton et carillons magiques.
           </p>
           <p>
-            <strong className="text-amber-400">Interactions :</strong> Clic / tap pour fouiller les pièces, fenêtre interactive de crochetage de cadenas à chiffres, consultation du carnet de notes.
+            <strong className="text-amber-400">Interactions :</strong> Clic / tap pour fouiller le Grand Salon, fenêtre interactive de crochetage de cadenas à chiffres, consultation du carnet de notes.
           </p>
           <p>
             <strong className="text-amber-400">Architecture :</strong> Séparation stricte données / logique (manorData.ts, soundEngine.ts, ManorRoomCanvas.tsx), système d inventaire combinable et journal de bord interactif.
@@ -46,6 +46,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose }) => {
           </p>
         </div>
 
+        <p className="px-4 pb-1 text-center text-[11px] text-slate-400">Créé par Geoffroy Streit (Hylst) avec l'aide d'une IA.</p>
         <div className="bg-slate-950 p-3 sm:p-4 text-center border-t border-slate-800">
           <button
             onClick={onClose}
